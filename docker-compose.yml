@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - VITE_BACKEND_URL=http://15.235.206.148:5007
     container_name: elodietran-frontend
     restart: unless-stopped
     ports:
