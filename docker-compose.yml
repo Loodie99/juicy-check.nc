@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: elodietran-frontend
     restart: unless-stopped
     ports:
       - "5070:5070"
